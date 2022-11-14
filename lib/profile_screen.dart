@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -9,7 +8,7 @@ class ProfileScreen extends StatelessWidget {
         children: <Widget>[
           Image.asset('assets/beach.jpg'),
           Transform.translate(
-            offset: Offset(0, 100),
+            offset: Offset(0, 150),
             child: Column(
               children: <Widget>[
                 _buildProfileImage(context),
@@ -25,8 +24,8 @@ class ProfileScreen extends StatelessWidget {
 
   Widget _buildProfileImage(BuildContext context) {
     return Container(
-      width: 200,
-      height: 200,
+      width: 150,
+      height: 150,
       child: ClipOval(
         child: Image.asset(
           'assets/dog.jpg',
